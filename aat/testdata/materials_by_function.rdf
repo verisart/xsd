@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:aat="http://vocab.getty.edu/aat/"
+	xmlns:aat_contrib="http://vocab.getty.edu/aat/contrib/"
+	xmlns:aat_rel="http://vocab.getty.edu/aat/rel/"
+	xmlns:aat_rev="http://vocab.getty.edu/aat/rev/"
+	xmlns:aat_scopeNote="http://vocab.getty.edu/aat/scopeNote/"
+	xmlns:aat_source="http://vocab.getty.edu/aat/source/"
+	xmlns:aat_source_rev="http://vocab.getty.edu/aat/source/rev/"
+	xmlns:aat_term="http://vocab.getty.edu/aat/term/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:bio="http://purl.org/vocab/bio/0.1/"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dctype="http://purl.org/dc/dcmitype/"
+	xmlns:fmt="http://www.w3.org/ns/formats/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:gvp="http://vocab.getty.edu/ontology#"
+	xmlns:gvp_lang="http://vocab.getty.edu/language/"
+	xmlns:iso="http://purl.org/iso25964/skos-thes#"
+	xmlns:luc="http://www.ontotext.com/owlim/lucene#"
+	xmlns:ontogeo="http://www.ontotext.com/owlim/geo#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:ptop="http://www.ontotext.com/proton/protontop#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rr="http://www.w3.org/ns/r2rml#"
+	xmlns:rrx="http://purl.org/r2rml-ext/"
+	xmlns:schema="http://schema.org/"
+	xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:tgn="http://vocab.getty.edu/tgn/"
+	xmlns:tgn_contrib="http://vocab.getty.edu/tgn/contrib/"
+	xmlns:tgn_rel="http://vocab.getty.edu/tgn/rel/"
+	xmlns:tgn_rev="http://vocab.getty.edu/tgn/rev/"
+	xmlns:tgn_scopeNote="http://vocab.getty.edu/tgn/scopeNote/"
+	xmlns:tgn_source="http://vocab.getty.edu/tgn/source/"
+	xmlns:tgn_source_rev="http://vocab.getty.edu/tgn/source/rev/"
+	xmlns:tgn_term="http://vocab.getty.edu/tgn/term/"
+	xmlns:ulan="http://vocab.getty.edu/ulan/"
+	xmlns:ulan_bio="http://vocab.getty.edu/ulan/bio/"
+	xmlns:ulan_contrib="http://vocab.getty.edu/ulan/contrib/"
+	xmlns:ulan_event="http://vocab.getty.edu/ulan/event/"
+	xmlns:ulan_rel="http://vocab.getty.edu/ulan/rel/"
+	xmlns:ulan_rev="http://vocab.getty.edu/ulan/rev/"
+	xmlns:ulan_scopeNote="http://vocab.getty.edu/ulan/scopeNote/"
+	xmlns:ulan_source="http://vocab.getty.edu/ulan/source/"
+	xmlns:ulan_source_rev="http://vocab.getty.edu/ulan/source/rev/"
+	xmlns:ulan_term="http://vocab.getty.edu/ulan/term/"
+	xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:vdpp="http://data.lirmm.fr/ontologies/vdpp#"
+	xmlns:voaf="http://purl.org/vocommons/voaf#"
+	xmlns:voag="http://voag.linkedmodel.org/voag#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+	xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:wv="http://vocab.org/waiver/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<gvp:Subject rdf:about="http://vocab.getty.edu/aat/300014692">
+	<rdf:type rdf:resource="http://vocab.getty.edu/ontology#GuideTerm"/>
+	<rdf:type rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">&lt;materials by function&gt;</rdfs:label>
+	<rdfs:label xml:lang="nl">&lt;materialen naar functie&gt;</rdfs:label>
+	<rdfs:label xml:lang="nl">&lt;materiaal naar functie&gt;</rdfs:label>
+	<rdfs:label xml:lang="fr">&lt;matériaux selon la fonction&gt;</rdfs:label>
+	<rdfs:label xml:lang="es">&lt;materiales por función&gt;</rdfs:label>
+	<rdfs:seeAlso rdf:resource="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300014692"/>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-01-01T00:00:00</dct:created>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T22:00:39</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-10-26T09:04:50</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:22:22</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-07T21:55:03</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-07T21:55:04</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:22:26</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-07T21:55:10</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-10-26T09:05:46</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T10:56:15</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T10:56:24</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T11:29:35</dct:modified>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-27T08:13:20</dct:modified>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5000023773"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001081818"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001681387"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002232431"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002870375"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002870376"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001649769"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001649770"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001649794"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001685165"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001693802"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001649768"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002232436"/>
+	<skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002870384"/>
+	<gvp:broader rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300264091"/>
+	<gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300010357"/>
+	<gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300264091"/>
+	<gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300010357"/>
+	<gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300264091"/>
+	<gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300010357"/>
+	<gvp:parentString>materials (matter), Materials (Hierarchy Name), Materials Facet</gvp:parentString>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5000023773"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001081818"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001681387"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002232431"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002870375"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002870376"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001649769"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001649770"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001649794"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001685165"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001693802"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001649768"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002232436"/>
+	<skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002870384"/>
+	<gvp:parentStringAbbrev>materials (matter), Materials (Hierarchy Name), Materials Facet</gvp:parentStringAbbrev>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</gvp:displayOrder>
+	<skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000014692-en"/>
+	<skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000471688-nl"/>
+	<skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000313680-fr"/>
+	<skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000419412-es"/>
+	<skos:prefLabel xml:lang="en">&lt;materials by function&gt;</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">&lt;materialen naar functie&gt;</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">&lt;matériaux selon la fonction&gt;</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">&lt;materiales por función&gt;</skos:prefLabel>
+	<skosxl:altLabel rdf:resource="http://vocab.getty.edu/aat/term/1000471689-nl"/>
+	<skos:altLabel xml:lang="nl">&lt;materiaal naar functie&gt;</skos:altLabel>
+	<gvp:broaderGeneric rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:broaderPreferred rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<gvp:prefLabelGVP rdf:resource="http://vocab.getty.edu/aat/term/1000014692-en"/>
+	<skos:inScheme rdf:resource="http://vocab.getty.edu/aat/"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000159"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000048434"/>
+	<dc:identifier>300014692</dc:identifier>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014693"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014701"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014801"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300389869"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265590"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300235576"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379033"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300080663"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300236306"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014842"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300254871"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300257037"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014720"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014846"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265585"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379608"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300011146"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014855"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300263384"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014857"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014902"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379664"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265211"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014904"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300014907"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300264870"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300013026"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015114"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265588"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015119"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265586"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379869"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300183758"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300234632"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300386688"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015131"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015132"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300080665"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015133"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015135"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015134"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015137"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300254496"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015139"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265591"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300246920"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300251577"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300227846"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015152"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300266340"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015153"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300391379"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379584"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300254740"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300227860"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015166"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300127358"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300264512"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300212646"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300183876"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015172"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015186"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300379616"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300194439"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015187"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015158"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300389687"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015192"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015217"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300311593"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300015295"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300265584"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300250441"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300183798"/>
+	<skos:member rdf:resource="http://vocab.getty.edu/aat/300204912"/>
+	<iso:superOrdinate rdf:resource="http://vocab.getty.edu/aat/300010358"/>
+	<void:inDataset rdf:resource="http://vocab.getty.edu/dataset/aat"/>
+	<dct:license rdf:resource="http://opendatacommons.org/licenses/by/1.0/"/>
+	<cc:license rdf:resource="http://opendatacommons.org/licenses/by/1.0/"/>
+	<prov:wasGeneratedBy>
+		<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5000023773">
+			<rdf:type rdf:resource="http://www.w3.org/ns/prov#Create"/>
+			<dc:type>created</dc:type>
+			<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-01-01T00:00:00</prov:startedAtTime>
+		</prov:Activity>
+	</prov:wasGeneratedBy>
+</gvp:Subject>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001081818">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>term added</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T22:00:39</prov:startedAtTime>
+	<dc:description>materials by function (1000014692);</dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001681387">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>term added</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-10-26T09:04:50</prov:startedAtTime>
+	<dc:description>matériaux selon la fonction (1000313680);</dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002232431">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>term added</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:22:22</prov:startedAtTime>
+	<dc:description>materiales por función (1000419412);</dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002870375">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>term added</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-07T21:55:03</prov:startedAtTime>
+	<dc:description>materialen naar functie (1000471688);</dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002870376">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>term added</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-07T21:55:04</prov:startedAtTime>
+	<dc:description>materiaal naar functie (1000471689);</dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001649769">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>updated</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T10:56:15</prov:startedAtTime>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001649770">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>updated</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T10:56:24</prov:startedAtTime>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001649794">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>updated</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T11:29:35</prov:startedAtTime>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001685165">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>updated</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-10-26T09:05:46</prov:startedAtTime>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001693802">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>updated</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-27T08:13:20</prov:startedAtTime>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001649768">
+	<rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+	<dc:type>note created</dc:type>
+	<prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-26T10:56:15</prov:startedAtTime>
+	<dc:description>Language: </dc:description>
+	<prov:used rdf:resource="http://vocab.getty.edu/aat/300014692"/>
+</prov:Activity>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000014692-en">
+	<gvp:term xml:lang="en">materials by function</gvp:term>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</gvp:displayOrder>
+	<skosxl:literalForm xml:lang="en">&lt;materials by function&gt;</skosxl:literalForm>
+	<gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+	<gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000093602"/>
+	<gvp:sourceNonPreferred rdf:resource="http://vocab.getty.edu/aat/source/2000093602"/>
+	<dc:identifier>1000014692</dc:identifier>
+	<dct:language rdf:resource="http://vocab.getty.edu/aat/300388277"/>
+	<dct:language rdf:resource="http://vocab.getty.edu/language/en"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000471688-nl">
+	<gvp:term xml:lang="nl">materialen naar functie</gvp:term>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</gvp:displayOrder>
+	<skosxl:literalForm xml:lang="nl">&lt;materialen naar functie&gt;</skosxl:literalForm>
+	<gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+	<gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+	<gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+	<dc:identifier>1000471688</dc:identifier>
+	<dct:language rdf:resource="http://vocab.getty.edu/aat/300388256"/>
+	<dct:language rdf:resource="http://vocab.getty.edu/language/nl"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000313680-fr">
+	<gvp:term xml:lang="fr">matériaux selon la fonction</gvp:term>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</gvp:displayOrder>
+	<skosxl:literalForm xml:lang="fr">&lt;matériaux selon la fonction&gt;</skosxl:literalForm>
+	<gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+	<gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000159"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000159"/>
+	<gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+	<gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000048434"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000048434"/>
+	<dc:identifier>1000313680</dc:identifier>
+	<dct:language rdf:resource="http://vocab.getty.edu/aat/300388306"/>
+	<dct:language rdf:resource="http://vocab.getty.edu/language/fr"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000419412-es">
+	<gvp:term xml:lang="es">materiales por función</gvp:term>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</gvp:displayOrder>
+	<skosxl:literalForm xml:lang="es">&lt;materiales por función&gt;</skosxl:literalForm>
+	<gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+	<gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+	<gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000051034"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000051034"/>
+	<dc:identifier>1000419412</dc:identifier>
+	<dct:language rdf:resource="http://vocab.getty.edu/aat/300389311"/>
+	<dct:language rdf:resource="http://vocab.getty.edu/language/es"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000471689-nl">
+	<gvp:term xml:lang="nl">materiaal naar functie</gvp:term>
+	<gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</gvp:displayOrder>
+	<skosxl:literalForm xml:lang="nl">&lt;materiaal naar functie&gt;</skosxl:literalForm>
+	<gvp:termType rdf:resource="http://vocab.getty.edu/term/type/AlternateDescriptor"/>
+	<dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+	<gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+	<dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+	<dc:identifier>1000471689</dc:identifier>
+	<dct:language rdf:resource="http://vocab.getty.edu/aat/300388256"/>
+	<dct:language rdf:resource="http://vocab.getty.edu/language/nl"/>
+</skosxl:Label>
+
+</rdf:RDF>

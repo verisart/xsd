@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:aat="http://vocab.getty.edu/aat/"
+  xmlns:aat_contrib="http://vocab.getty.edu/aat/contrib/"
+  xmlns:aat_rel="http://vocab.getty.edu/aat/rel/"
+  xmlns:aat_rev="http://vocab.getty.edu/aat/rev/"
+  xmlns:aat_scopeNote="http://vocab.getty.edu/aat/scopeNote/"
+  xmlns:aat_source="http://vocab.getty.edu/aat/source/"
+  xmlns:aat_source_rev="http://vocab.getty.edu/aat/source/rev/"
+  xmlns:aat_term="http://vocab.getty.edu/aat/term/"
+  xmlns:adms="http://www.w3.org/ns/adms#"
+  xmlns:bibo="http://purl.org/ontology/bibo/"
+  xmlns:bio="http://purl.org/vocab/bio/0.1/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:dctype="http://purl.org/dc/dcmitype/"
+  xmlns:fmt="http://www.w3.org/ns/formats/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:gvp="http://vocab.getty.edu/ontology#"
+  xmlns:gvp_lang="http://vocab.getty.edu/language/"
+  xmlns:iso="http://purl.org/iso25964/skos-thes#"
+  xmlns:luc="http://www.ontotext.com/owlim/lucene#"
+  xmlns:ontogeo="http://www.ontotext.com/owlim/geo#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:ptop="http://www.ontotext.com/proton/protontop#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rr="http://www.w3.org/ns/r2rml#"
+  xmlns:rrx="http://purl.org/r2rml-ext/"
+  xmlns:schema="http://schema.org/"
+  xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+  xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+  xmlns:tgn="http://vocab.getty.edu/tgn/"
+  xmlns:tgn_contrib="http://vocab.getty.edu/tgn/contrib/"
+  xmlns:tgn_rel="http://vocab.getty.edu/tgn/rel/"
+  xmlns:tgn_rev="http://vocab.getty.edu/tgn/rev/"
+  xmlns:tgn_scopeNote="http://vocab.getty.edu/tgn/scopeNote/"
+  xmlns:tgn_source="http://vocab.getty.edu/tgn/source/"
+  xmlns:tgn_source_rev="http://vocab.getty.edu/tgn/source/rev/"
+  xmlns:tgn_term="http://vocab.getty.edu/tgn/term/"
+  xmlns:ulan="http://vocab.getty.edu/ulan/"
+  xmlns:ulan_bio="http://vocab.getty.edu/ulan/bio/"
+  xmlns:ulan_contrib="http://vocab.getty.edu/ulan/contrib/"
+  xmlns:ulan_event="http://vocab.getty.edu/ulan/event/"
+  xmlns:ulan_rel="http://vocab.getty.edu/ulan/rel/"
+  xmlns:ulan_rev="http://vocab.getty.edu/ulan/rev/"
+  xmlns:ulan_scopeNote="http://vocab.getty.edu/ulan/scopeNote/"
+  xmlns:ulan_source="http://vocab.getty.edu/ulan/source/"
+  xmlns:ulan_source_rev="http://vocab.getty.edu/ulan/source/rev/"
+  xmlns:ulan_term="http://vocab.getty.edu/ulan/term/"
+  xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:vdpp="http://data.lirmm.fr/ontologies/vdpp#"
+  xmlns:voaf="http://purl.org/vocommons/voaf#"
+  xmlns:voag="http://voag.linkedmodel.org/voag#"
+  xmlns:void="http://rdfs.org/ns/void#"
+  xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+  xmlns:wgs="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:wv="http://vocab.org/waiver/terms/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<gvp:Subject rdf:about="http://vocab.getty.edu/aat/300021512">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="http://vocab.getty.edu/ontology#Concept"/>
+  <rdfs:label xml:lang="en">Surrealist</rdfs:label>
+  <rdfs:label xml:lang="en">Surrealism</rdfs:label>
+  <rdfs:label xml:lang="en">Supperrealism</rdfs:label>
+  <rdfs:label xml:lang="zh-hant">超現實主義</rdfs:label>
+  <rdfs:label xml:lang="zh-latn-pinyin-x-hanyu">chāo xiàn shí zhǔ yì</rdfs:label>
+  <rdfs:label xml:lang="zh-latn-pinyin-x-notone">chao xian shi zhu yi</rdfs:label>
+  <rdfs:label xml:lang="zh-latn-wadegile">ch'ao hsien shih chu i</rdfs:label>
+  <rdfs:label xml:lang="nl">surrealistisch</rdfs:label>
+  <rdfs:label xml:lang="nl">surrealisme</rdfs:label>
+  <rdfs:label xml:lang="es">Surrealista</rdfs:label>
+  <rdfs:label xml:lang="es">surrealismo</rdfs:label>
+  <rdfs:seeAlso rdf:resource="http://www.getty.edu/vow/AATFullDisplay?find=&amp;logic=AND&amp;note=&amp;subjectid=300021512"/>
+  <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-01-01T00:00:00</dct:created>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T21:59:36</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:57:28</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-08T00:07:22</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:50</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:57:29</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-08T00:07:24</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:51</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T22:15:04</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:12:08</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-02-12T12:53:49</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:21:23</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-16T13:06:52</dct:modified>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-13T12:08:49</dct:modified>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5000007448"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001058961"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001058962"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001058963"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002261117"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002261118"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002908681"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002908682"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003567039"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003567040"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003567041"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003567042"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001171099"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001490995"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001657448"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001657495"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001657496"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003554098"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001490994"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5001657494"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003237327"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002261126"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5002908692"/>
+  <skos:changeNote rdf:resource="http://vocab.getty.edu/aat/rev/5003567058"/>
+  <gvp:broader rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300111079"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300021424"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300264088"/>
+  <gvp:broaderGenericExtended rdf:resource="http://vocab.getty.edu/aat/300015646"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300111079"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300021424"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300264088"/>
+  <gvp:broaderExtended rdf:resource="http://vocab.getty.edu/aat/300015646"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300111079"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300021424"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300264088"/>
+  <gvp:broaderPreferredExtended rdf:resource="http://vocab.getty.edu/aat/300015646"/>
+  <gvp:parentString>&lt;modern European fine arts styles and movements&gt;, &lt;modern European styles and movements&gt;, European, &lt;styles, periods, and cultures by region&gt;, Styles and Periods, Styles and Periods Facet</gvp:parentString>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/scopeNote/53216"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/scopeNote/62600"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/scopeNote/98194"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/scopeNote/117499"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5000007448"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001058961"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001058962"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001058963"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002261117"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002261118"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002908681"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002908682"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003567039"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003567040"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003567041"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003567042"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001171099"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001490995"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001657448"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001657495"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001657496"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003554098"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001490994"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5001657494"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003237327"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002261126"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5002908692"/>
+  <skos:note rdf:resource="http://vocab.getty.edu/aat/rev/5003567058"/>
+  <gvp:parentStringAbbrev>&lt;modern European fine arts styles and movements&gt;, &lt;modern European styles and movements&gt;, ... Styles and Periods Facet</gvp:parentStringAbbrev>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">16</gvp:displayOrder>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000021512-en"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000584136-zh-Hant"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000584138-zh-Latn-pinyin-x-hanyu"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000584137-zh-Latn-pinyin-x-notone"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000584139-zh-Latn-wadegile"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000474972-nl"/>
+  <skosxl:prefLabel rdf:resource="http://vocab.getty.edu/aat/term/1000422769-es"/>
+  <skos:prefLabel xml:lang="en">Surrealist</skos:prefLabel>
+  <skos:prefLabel xml:lang="zh-hant">超現實主義</skos:prefLabel>
+  <skos:prefLabel xml:lang="zh-latn-pinyin-x-hanyu">chāo xiàn shí zhǔ yì</skos:prefLabel>
+  <skos:prefLabel xml:lang="zh-latn-pinyin-x-notone">chao xian shi zhu yi</skos:prefLabel>
+  <skos:prefLabel xml:lang="zh-latn-wadegile">ch'ao hsien shih chu i</skos:prefLabel>
+  <skos:prefLabel xml:lang="nl">surrealistisch</skos:prefLabel>
+  <skos:prefLabel xml:lang="es">Surrealista</skos:prefLabel>
+  <skosxl:altLabel rdf:resource="http://vocab.getty.edu/aat/term/1000279979-en"/>
+  <skosxl:altLabel rdf:resource="http://vocab.getty.edu/aat/term/1000268785-en"/>
+  <skosxl:altLabel rdf:resource="http://vocab.getty.edu/aat/term/1000474973-nl"/>
+  <skosxl:altLabel rdf:resource="http://vocab.getty.edu/aat/term/1000422770-es"/>
+  <skos:altLabel xml:lang="en">Surrealism</skos:altLabel>
+  <skos:altLabel xml:lang="en">Supperrealism</skos:altLabel>
+  <skos:altLabel xml:lang="nl">surrealisme</skos:altLabel>
+  <skos:altLabel xml:lang="es">surrealismo</skos:altLabel>
+  <gvp:broaderGeneric rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderPreferred rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderNonConcept rdf:resource="http://vocab.getty.edu/aat/300021494"/>
+  <gvp:broaderNonConcept rdf:resource="http://vocab.getty.edu/aat/300021424"/>
+  <skos:broader rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <iso:broaderGeneric rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <gvp:prefLabelGVP rdf:resource="http://vocab.getty.edu/aat/term/1000021512-en"/>
+  <skos:inScheme rdf:resource="http://vocab.getty.edu/aat/"/>
+  <skos:scopeNote rdf:resource="http://vocab.getty.edu/aat/scopeNote/53216"/>
+  <skos:scopeNote rdf:resource="http://vocab.getty.edu/aat/scopeNote/62600"/>
+  <skos:scopeNote rdf:resource="http://vocab.getty.edu/aat/scopeNote/98194"/>
+  <skos:scopeNote rdf:resource="http://vocab.getty.edu/aat/scopeNote/117499"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000088"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000052373"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000035111-subject-300021512"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000051089-subject-300021512"/>
+  <skos:related rdf:resource="http://vocab.getty.edu/aat/300022099"/>
+  <skos:related rdf:resource="http://vocab.getty.edu/aat/300182745"/>
+  <skos:related rdf:resource="http://vocab.getty.edu/aat/300021514"/>
+  <dc:identifier>300021512</dc:identifier>
+  <gvp:aat2552_reflected_in-produces rdf:resource="http://vocab.getty.edu/aat/300182745"/>
+  <gvp:aat2811_preceded rdf:resource="http://vocab.getty.edu/aat/300022099"/>
+  <gvp:aat2812_followed rdf:resource="http://vocab.getty.edu/aat/300021514"/>
+  <skos:broaderTransitive rdf:resource="http://vocab.getty.edu/aat/300020656"/>
+  <void:inDataset rdf:resource="http://vocab.getty.edu/dataset/aat"/>
+  <dct:license rdf:resource="http://opendatacommons.org/licenses/by/1.0/"/>
+  <cc:license rdf:resource="http://opendatacommons.org/licenses/by/1.0/"/>
+  <prov:wasGeneratedBy>
+    <prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5000007448">
+      <rdf:type rdf:resource="http://www.w3.org/ns/prov#Create"/>
+      <dc:type>created</dc:type>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-01-01T00:00:00</prov:startedAtTime>
+    </prov:Activity>
+  </prov:wasGeneratedBy>
+</gvp:Subject>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001058961">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T21:59:36</prov:startedAtTime>
+  <dc:description>Surrealist (1000021512);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001058962">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T21:59:36</prov:startedAtTime>
+  <dc:description>Surrealism (1000279979);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001058963">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T21:59:36</prov:startedAtTime>
+  <dc:description>Supperrealism (1000268785);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002261117">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:57:28</prov:startedAtTime>
+  <dc:description>Surrealista (1000422769);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002261118">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-04-23T00:57:28</prov:startedAtTime>
+  <dc:description>surrealismo (1000422770);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002908681">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-08T00:07:22</prov:startedAtTime>
+  <dc:description>surrealistisch (1000474972);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5002908682">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-01-08T00:07:22</prov:startedAtTime>
+  <dc:description>surrealisme (1000474973);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003567039">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:50</prov:startedAtTime>
+  <dc:description>超現實主義 (1000584136);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003567040">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:50</prov:startedAtTime>
+  <dc:description>ch'ao hsien shih chu i (1000584139);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003567041">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:50</prov:startedAtTime>
+  <dc:description>chao xian shi zhu yi (1000584137);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003567042">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>term added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-02-14T09:18:50</prov:startedAtTime>
+  <dc:description>chāo xiàn shí zhǔ yì (1000584138);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001171099">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-26T22:15:04</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'related to' Abstract Expressionist (300022099);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001490995">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-02-12T12:53:49</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'related to' Symbolist (300021514);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001657448">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:12:08</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'preceded' Abstract Expressionist (300022099);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001657495">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation deleted</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:21:23</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'related to' Symbolist (300021514);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001657496">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:21:23</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'followed' Symbolist (300021514);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003554098">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>relation added</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-01-16T13:06:52</prov:startedAtTime>
+  <dc:description>Surrealist (300021512) 'produces/reflected in' cadavres exquis (300182745);</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001490994">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>updated</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-02-12T12:53:49</prov:startedAtTime>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5001657494">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>updated</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-14T13:21:23</prov:startedAtTime>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<prov:Activity rdf:about="http://vocab.getty.edu/aat/rev/5003237327">
+  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Modify"/>
+  <dc:type>updated</dc:type>
+  <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-13T12:08:49</prov:startedAtTime>
+  <dc:description>GCI Source and Contributor added</dc:description>
+  <prov:used rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+</prov:Activity>
+<bibo:DocumentPart rdf:about="http://vocab.getty.edu/aat/source/2000035111-subject-300021512">
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000035111"/>
+  <bibo:locator>Fantastic...; Surrealist...</bibo:locator>
+</bibo:DocumentPart>
+<bibo:DocumentPart rdf:about="http://vocab.getty.edu/aat/source/2000051089-subject-300021512">
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000051089"/>
+  <bibo:locator>129441 checked 26 January 2012</bibo:locator>
+</bibo:DocumentPart>
+<gvp:ScopeNote rdf:about="http://vocab.getty.edu/aat/scopeNote/53216">
+  <rdf:value xml:lang="en">Refers to the international intellectual movement centered mainly in Paris from the 1920s to the late 1940s. Adopting some of the aesthetic experiments of Symbolism and the attitudes of Dada, the movement is characterized by an emphasis on exploring the limits of experience by fusing reality with the instinctual, the subconscious, and the realm of dreams, in order to create an absolute reality.</rdf:value>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000076211"/>
+  <dc:identifier>53216</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388277"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/en"/>
+</gvp:ScopeNote>
+<gvp:ScopeNote rdf:about="http://vocab.getty.edu/aat/scopeNote/62600">
+  <rdf:value xml:lang="es">Se refiere al movimiento intelectual internacional centrado principalmente en París de los años veinte a fines de 1940. Adoptando algunos de los experimentos estéticos del Simbolismo y las actitudes del Dada, el movimiento se caracteriza por un énfasis en explorar los límites de la experiencia mezclando la realidad con lo instintivo, el subconsciente y el reino de los sueños para crear una realidad absoluta.</rdf:value>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000051034"/>
+  <dc:identifier>62600</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300389311"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/es"/>
+</gvp:ScopeNote>
+<gvp:ScopeNote rdf:about="http://vocab.getty.edu/aat/scopeNote/98194">
+  <rdf:value xml:lang="nl">Verwijst naar de internationale intellectuele beweging die zich vooral concentreerde in Parijs, van de jaren 20 tot eind jaren 40 van de 20ste eeuw.De beweging, die de esthetische experimenten van het symbolisme en de instelling van dada overnam, kenmerkte zich door een nadruk op het onderzoeken van de grenzen van de ervaring door de realiteit te mengen met het instinctieve, het onderbewuste en het domein van de droom, om vervolgens een absolute realiteit te creëren.</rdf:value>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000052373"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+  <dc:identifier>98194</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388256"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/nl"/>
+</gvp:ScopeNote>
+<gvp:ScopeNote rdf:about="http://vocab.getty.edu/aat/scopeNote/117499">
+  <rdf:value xml:lang="zh-hant">指1920年代至1940年代中期，以巴黎為發展中心的國際性文化運動。此運動引用一些象徵主義的美學實驗與達達主義的觀點，強調融合現實與本能、潛意識及夢境，來發掘經驗極限，以營造絕對的真實。</rdf:value>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <dc:identifier>117499</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388116"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/zh-Hant"/>
+</gvp:ScopeNote>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000021512-en">
+  <gvp:term xml:lang="en">Surrealist</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="en">Surrealist</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+  <gvp:termPOS rdf:resource="http://vocab.getty.edu/term/POS/Adjectival"/>
+  <gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000088"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000088"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000002801-term-1000021512"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000018161-term-1000021512"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000051089-term-1000021512"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000002801-term-1000021512"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000018161-term-1000021512"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000051089-term-1000021512"/>
+  <dc:identifier>1000021512</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388277"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/en"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000584136-zh-Hant">
+  <gvp:term xml:lang="zh-hant">超現實主義</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="zh-hant">超現實主義</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+  <gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000078073-term-1000584136"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000078074-term-1000584136"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000078075-term-1000584136"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000078076-term-1000584136"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000093506-term-1000584136"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000093495-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000078073-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000078074-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000078075-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000078076-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000093506-term-1000584136"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000093495-term-1000584136"/>
+  <dc:identifier>1000584136</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388116"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/zh-Hant"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000584138-zh-Latn-pinyin-x-hanyu">
+  <gvp:term xml:lang="zh-latn-pinyin-x-hanyu">chāo xiàn shí zhǔ yì</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="zh-latn-pinyin-x-hanyu">chāo xiàn shí zhǔ yì</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/UsedForTerm"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <gvp:sourceNonPreferred rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <dc:identifier>1000584138</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388117"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/zh-Latn-pinyin-x-hanyu"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000584137-zh-Latn-pinyin-x-notone">
+  <gvp:term xml:lang="zh-latn-pinyin-x-notone">chao xian shi zhu yi</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="zh-latn-pinyin-x-notone">chao xian shi zhu yi</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/UsedForTerm"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <gvp:sourceNonPreferred rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <dc:identifier>1000584137</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388118"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/zh-Latn-pinyin-x-notone"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000584139-zh-Latn-wadegile">
+  <gvp:term xml:lang="zh-latn-wadegile">ch'ao hsien shih chu i</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="zh-latn-wadegile">ch'ao hsien shih chu i</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/UsedForTerm"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000250"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <gvp:sourceNonPreferred rdf:resource="http://vocab.getty.edu/aat/source/2000079740"/>
+  <dc:identifier>1000584139</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388121"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/zh-Latn-wadegile"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000474972-nl">
+  <gvp:term xml:lang="nl">surrealistisch</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="nl">surrealistisch</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+  <gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+  <dc:identifier>1000474972</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388256"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/nl"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000422769-es">
+  <gvp:term xml:lang="es">Surrealista</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">10</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="es">Surrealista</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/Descriptor"/>
+  <gvp:contributorPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000048954-term-1000422769"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000048954-term-1000422769"/>
+  <dc:identifier>1000422769</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300389311"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/es"/>
+</skosxl:Label>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000002801-term-1000021512">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000002801"/>
+  <bibo:locator>349</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000018161-term-1000021512">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000018161"/>
+  <bibo:locator>396</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000051089-term-1000021512">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000051089"/>
+  <bibo:locator>129441 checked 26 January 2012</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000078073-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000078073"/>
+  <bibo:locator>1775</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000078074-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000078074"/>
+  <bibo:locator>445</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000078075-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000078075"/>
+  <bibo:locator>970</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000078076-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000078076"/>
+  <bibo:locator>August 26, 2011</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000093506-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000093506"/>
+  <bibo:locator>1842</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000093495-term-1000584136">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000093495"/>
+  <bibo:locator>August 26, 2011</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000048954-term-1000422769">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000048954"/>
+  <bibo:locator>1014</bibo:locator>
+</bibo:Document>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000279979-en">
+  <gvp:term xml:lang="en">Surrealism</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="en">Surrealism</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/AlternateDescriptor"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000024811"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000032431"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000035251"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000043551"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000046657"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000046691"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000035021-term-1000279979"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000026701-term-1000279979"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000029111-term-1000279979"/>
+  <gvp:sourcePreferred rdf:resource="http://vocab.getty.edu/aat/source/2000030761-term-1000279979"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000024811"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000032431"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000035251"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000043551"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000046657"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000046691"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000035021-term-1000279979"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000026701-term-1000279979"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000029111-term-1000279979"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000030761-term-1000279979"/>
+  <dc:identifier>1000279979</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388277"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/en"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000268785-en">
+  <gvp:term xml:lang="en">Supperrealism</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="en">Supperrealism</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/UsedForTerm"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000000"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000024811"/>
+  <gvp:sourceNonPreferred rdf:resource="http://vocab.getty.edu/aat/source/2000024811"/>
+  <dc:identifier>1000268785</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388277"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/en"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000474973-nl">
+  <gvp:term xml:lang="nl">surrealisme</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="nl">surrealisme</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/AlternateDescriptor"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000205"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000077523"/>
+  <dc:identifier>1000474973</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300388256"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/nl"/>
+</skosxl:Label>
+<skosxl:Label rdf:about="http://vocab.getty.edu/aat/term/1000422770-es">
+  <gvp:term xml:lang="es">surrealismo</gvp:term>
+  <gvp:displayOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">11</gvp:displayOrder>
+  <skosxl:literalForm xml:lang="es">surrealismo</skosxl:literalForm>
+  <gvp:termType rdf:resource="http://vocab.getty.edu/term/type/AlternateDescriptor"/>
+  <dct:contributor rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <gvp:contributorNonPreferred rdf:resource="http://vocab.getty.edu/aat/contrib/10000131"/>
+  <dct:source rdf:resource="http://vocab.getty.edu/aat/source/2000048952-term-1000422770"/>
+  <dc:identifier>1000422770</dc:identifier>
+  <dct:language rdf:resource="http://vocab.getty.edu/aat/300389311"/>
+  <dct:language rdf:resource="http://vocab.getty.edu/language/es"/>
+</skosxl:Label>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000035021-term-1000279979">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000035021"/>
+  <bibo:locator>Vol. 4, 173</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000026701-term-1000279979">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000026701"/>
+  <bibo:locator>386</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000029111-term-1000279979">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000029111"/>
+  <bibo:locator>401</bibo:locator>
+</bibo:Document>
+<bibo:Document rdf:about="http://vocab.getty.edu/aat/source/2000030761-term-1000279979">
+  <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000030761"/>
+  <bibo:locator>1115</bibo:locator>
+</bibo:Document>
+<bibo:DocumentPart rdf:about="http://vocab.getty.edu/aat/source/2000048952-term-1000422770">
+  <dct:isPartOf rdf:resource="http://vocab.getty.edu/aat/source/2000048952"/>
+  <bibo:locator>345</bibo:locator>
+</bibo:DocumentPart>
+<rdf:Statement rdf:about="http://vocab.getty.edu/aat/rel/300021512-aat2812_followed-300021514">
+  <rdf:subject rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+  <rdf:predicate rdf:resource="http://vocab.getty.edu/ontology#aat2812_followed"/>
+  <rdf:object rdf:resource="http://vocab.getty.edu/aat/300021514"/>
+</rdf:Statement>
+<rdf:Statement rdf:about="http://vocab.getty.edu/aat/rel/300021512-aat2811_preceded-300022099">
+  <rdf:subject rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+  <rdf:predicate rdf:resource="http://vocab.getty.edu/ontology#aat2811_preceded"/>
+  <rdf:object rdf:resource="http://vocab.getty.edu/aat/300022099"/>
+</rdf:Statement>
+<rdf:Statement rdf:about="http://vocab.getty.edu/aat/rel/300021512-aat2552_reflected_in-produces-300182745">
+  <rdf:subject rdf:resource="http://vocab.getty.edu/aat/300021512"/>
+  <rdf:predicate rdf:resource="http://vocab.getty.edu/ontology#aat2552_reflected_in-produces"/>
+  <rdf:object rdf:resource="http://vocab.getty.edu/aat/300182745"/>
+</rdf:Statement>
+</rdf:RDF>
