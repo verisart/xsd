@@ -42,15 +42,18 @@ type AppellationValue struct {
 	Label xsdt.String `xml:"label,attr,omitempty"`
 }
 
-func (ap *Appellation) Set(value string, lang string, pref bool) error {
+func (apl *Appellation) Set(value string, lang string, pref bool) error {
 	// First clear, then append
-	ap.Values = ap.Values[:0]
-	return ap.Append(value, lang, pref)
+	if len(apl.Values) > 0 {
+		apl.Values = apl.Values[:0]
+	}
+
+	return apl.Append(value, lang, pref)
 }
 
 // Adds a an appellation value
-func (ap *Appellation) Append(value string, lang string, pref bool) error {
-	ap.Values = append(ap.Values, &AppellationValue{
+func (apl *Appellation) Append(value string, lang string, pref bool) error {
+	apl.Values = append(apl.Values, &AppellationValue{
 		Value: ToXsdt(value),
 		Lang:  ToLang(lang),
 		Pref:  ToPref(pref),

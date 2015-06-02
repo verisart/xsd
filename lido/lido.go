@@ -64,7 +64,7 @@ type Lido struct {
 	// represented.If only a few data fields (e.g. title) are provided in more
 	// than one language, the respective text elements may be repeated specifying
 	// the lang attribute on the text level.
-	DescriptiveMetadatas []*DescriptiveMetadata `xml:"descriptiveMetadata"`
+	DescriptiveMetadatas []*DescriptiveMetadata `xml:"http://www.lido-schema.org descriptiveMetadata"`
 
 	// Holds the administrative metadata for an object / work record. The
 	// attribute xml:lang is mandatory and specifies the language of the
@@ -91,6 +91,7 @@ func (l *Lido) AppendRecID(recSource string, recType string, recID string) {
 	})
 }
 
+// Sets the LIDO category to a category defined in the CIDOC CRM
 func (l *Lido) SetCRMCategory(crmID string) error {
 	concept, err := NewCRMConcept(crmID)
 
@@ -188,6 +189,17 @@ type DescriptiveMetadata struct {
 
 	// Required language
 	Lang xsdt.Language `xml:"http://www.w3.org/XML/1998/namespace lang,attr"`
+}
+
+// Were assuming that the language is already provided by the descriptive metadata
+func (dm *DescriptiveMetadata) AppendAATWorkType(conceptType string, aatID string, term string) {
+	dm.AppendTermWorkType("AAT", conceptType, aatID, term)
+}
+
+// Were assuming that the language is already provided by the descriptive metadata
+func (dm *DescriptiveMetadata) AppendTermWorkType(termSource string, conceptType string, termID string, term string) {
+	dm.ObjectClass.WorkType.Types = append(dm.ObjectClass.WorkType.Types,
+		NewConceptClassification(NewTermConcept(termSource, conceptType, termID, term)))
 }
 
 type ObjectIdentification struct {
@@ -320,7 +332,7 @@ type Subject struct {
 	SubjectConcepts []*ConceptElement `xml:"subjectConcept"`
 
 	//	Definition: A person, group, or institution depicted in or by an object / work, or what it is about, provided as display and index elements.
-	SubjectActors []*ActorElement `xml:"subjectActor"`
+	SubjectActors []*SubjectActor `xml:"subjectActor"`
 
 	//	Definition: A time specification depicted in or by an object / work, or what it is about, provided as display and index elements.
 	SubjectDates []*DateSpan `xml:"subjectDate"`
@@ -329,12 +341,21 @@ type Subject struct {
 	SubjectEvents []*EventElement `xml:"subjectEvent"`
 }
 
-type ActorElement struct {
-	//	Definition: Display element for one actor, corresponding to the following actor element.
-	//	How to record: May include name, brief biographical information of the named actor, presented in a syntax suitable for display to the end-user. If there is no known actor, make a reference to the presumed culture or nationality of the unknown actor.May be concatenated from the respective Actor element. The name should be in natural order, if possible, although inverted order is acceptable. Include nationality and life dates. For unknown actors, use e.g.: "unknown," "unknown Chinese," "Chinese," or "unknown 15th century Chinese."Repeat this element only for language variants.
-	DisplayActors []*Text `xml:"http://www.lido-schema.org displayActor"`
+type SubjectActor struct {
+	// Display element for one actor, corresponding to the following actor
+	// element. May include name, brief biographical information of the named
+	// actor, presented in a syntax suitable for display to the end-user. If there
+	// is no known actor, make a reference to the presumed culture or nationality
+	// of the unknown actor. May be concatenated from the respective Actor element.
+	// The name should be in natural order, if possible, although inverted order
+	// is acceptable. Include nationality and life dates. For unknown actors, use
+	// e.g.: "unknown," "unknown Chinese," "Chinese," or "unknown 15th century
+	// Chinese." Repeat this element only for language variants.
+	DisplayActors []*Text `xml:"displayActor"`
 
-	//	Definition: Describes and identifies an actor, i.e. a person, corporation, family or group, containing structured sub-elements for indexing and identification references.
+	// Describes and identifies an actor, i.e. a person, corporation, family or
+	// group, containing structured sub-elements for indexing and identification
+	// references.
 	Actor *Actor `xml:"actor"`
 
 	// Assigns a priority order for online presentation of the element. Has to be
@@ -344,15 +365,15 @@ type ActorElement struct {
 
 type ObjectClassification struct {
 	// A wrapper for Object/Work Types.
-	ObjectWorkTypeWrap *ObjectWorkTypeWrap `xml:"objectWorkTypeWrap"`
+	WorkType ObjectWorkTypeWrap `xml:"objectWorkTypeWrap"`
 
-	//A wrapper for any classification used to categorize an object / work by
+	// A wrapper for any classification used to categorize an object / work by
 	// grouping it together with others on the basis of similar characteristics.
 	ClassificationWrap *ClassificationWrap `xml:"classificationWrap"`
 }
 
 type ObjectWorkTypeWrap struct {
-	ObjectWorkTypes []*ClassificationElement `xml:"objectWorkType"`
+	Types []*ClassificationElement `xml:"objectWorkType"`
 }
 
 type ClassificationWrap struct {
@@ -565,6 +586,7 @@ type WorkID struct {
 	// date. Data values may be: exactDate, estimatedDate.
 	Type xsdt.String `xml:"type,attr,omitempty"`
 }
+
 type EventElement struct {
 	// Display element for an event, corresponding to the following event element.
 	// How to record: Repeat this element only for language variants.
@@ -581,7 +603,10 @@ type EventElement struct {
 
 // Simple text element with encodinganalog and label attribute
 type Text struct {
-	XsdtString xsdt.String `xml:",chardata"`
+	Value xsdt.String `xml:",chardata"`
+
+	Lang xsdt.Language `xml:"http://www.w3.org/XML/1998/namespace lang,attr,omitempty"`
+
 	// How to record: Elements with data values are accompanied by the attributes
 	// encodinganalog and label to indicate the format of the data source from
 	// which the data were migrated. The attribute encodinganalog refers to the
@@ -595,8 +620,6 @@ type Text struct {
 	// label of a data field at the visible user interface. The source format is
 	// indicated in the attribute
 	Label xsdt.String `xml:"label,attr,omitempty"`
-
-	Lang xsdt.Language `xml:"http://www.w3.org/XML/1998/namespace lang,attr,omitempty"`
 }
 
 type Event struct {
@@ -797,14 +820,17 @@ type ConceptElement struct {
 type ClassificationElement struct {
 	Concept
 
-	// Indicates if the actor is an individual, a group of individuals, a family
-	// or a corporation (firm or other corporate body). Data values: person,
-	// group, family, corporation.
 	Type xsdt.String `xml:"type,attr,omitempty"`
 
 	// Assigns a priority order for online presentation of the element. Has to be
 	// a positive integer, with descending priority from 1 to x.
 	SortOrder xsdt.Integer `xml:"sortorder,attr,omitempty"`
+}
+
+func NewConceptClassification(concept *Concept) *ClassificationElement {
+	return &ClassificationElement{
+		Concept: *concept,
+	}
 }
 
 type ThingPresent struct {
@@ -930,7 +956,7 @@ type ActorInRoleSet struct {
 }
 
 type ActorInRole struct {
-	//	Definition: Contains structured identifying and indexing actor information.
+	// Contains structured identifying and indexing actor information.
 	Actor *Actor `xml:"actor"`
 
 	// Role of the Actor in the event. Preferably taken from a published
@@ -945,11 +971,13 @@ type ActorInRole struct {
 	// of, manner of...
 	AttributionQualifierActors []*Text `xml:"attributionQualifierActor"`
 
-	//	Definition: Extent of the actor's participation in the event, if there are several actors.
-	//	How to record: Example values: design, execution, with additions by, figures, renovation by, predella, embroidery, cast by, printed by, ...
+	// Extent of the actor's participation in the event, if there are several
+	// actors. Example values: design, execution, with additions by, figures,
+	// renovation by, predella, embroidery, cast by, printed by, ...
 	ExtentActors []*Text `xml:"extentActor"`
 }
 
+// In some cases the actor will be encrypted such as events.
 type Actor struct {
 	XMLName xml.Name `xml:"actor"`
 	// A unique identifier for the actor. Preferably taken from a published
@@ -977,9 +1005,9 @@ type Actor struct {
 	// birthDate, deathDate, estimatedDate.
 	VitalDatesActor *DateSpan `xml:"vitalDatesActor"`
 
-	//	Definition: The sex of the individual.
-	//	How to record: Data values: male, female, unknown, not applicable.Repeat this element for language variants only.
-	//	Notes: Not applicable for corporate bodies.
+	// The sex of the individual. Data values: male, female, unknown, not
+	// applicable.Repeat this element for language variants only.
+	// Notes: Not applicable for corporate bodies.
 	GenderActors []*Text `xml:"genderActor"`
 
 	// Indicates if the actor is an individual, a group of individuals, a family

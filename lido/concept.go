@@ -79,3 +79,19 @@ func NewCRMConcept(crmID string) (*Concept, error) {
 
 	return NewURIConcept(cidoccrm.FormatURI(crmID), name, "en"), nil
 }
+
+func NewTermConcept(source string, conceptType string, termID string, term string) *Concept {
+	return NewConcept(
+		&Identifier{
+			Value:  ToXsdt(termID),
+			Source: ToXsdt(source),
+			Type:   ToXsdt(conceptType),
+		},
+		&Term{
+			Value: ToXsdt(term),
+		})
+}
+
+func NewAATConcept(conceptType string, aatID string, term string) *Concept {
+	return NewTermConcept("AAT", conceptType, aatID, term)
+}
