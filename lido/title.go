@@ -6,7 +6,7 @@ import (
 
 // Wrapper for Object name / Title information.
 type TitleWrap struct {
-	Titles []*Title `xml:"titleSet"`
+	Titles []*Title `xml:"http://www.lido-schema.org titleSet"`
 }
 
 // Wrapper for one title or object name and its source information.
@@ -20,11 +20,11 @@ type Title struct {
 
 	// Assigns a priority order for online presentation of the element. Has to be
 	// a positive integer, with descending priority from 1 to x.
-	SortOrder xsdt.Integer `xml:"sortorder,attr,omitempty"`
+	SortOrder xsdt.Integer `xml:"http://www.lido-schema.org sortorder,attr,omitempty"`
 
 	// Type can be used to specify alternate or preferred i.e. 'Repository Title'
 	// or 'Alternate Title'
-	Type xsdt.String `xml:"type,attr,omitempty"`
+	Type xsdt.String `xml:"http://www.lido-schema.org type,attr,omitempty"`
 }
 
 func NewTitle(value string, lang string, pref bool, titleType string) (*Title, error) {

@@ -14,10 +14,10 @@ type Concept struct {
 
 	// A unique identifier for the concept. Preferably taken from and linking to
 	// a published controlled vocabulary.
-	ConceptIDs []*Identifier `xml:"conceptID"`
+	ConceptIDs []*Identifier `xml:"http://www.lido-schema.org conceptID"`
 
 	// A name for the referred concept, used for indexing.
-	Terms []*Term `xml:"term"`
+	Terms []*Term `xml:"http://www.lido-schema.org term"`
 }
 
 // A name for a concept / term, usually from a controlled vocabulary.
@@ -28,27 +28,27 @@ type Term struct {
 
 	// Qualifies the value as a preferred or alternative variant. Data values:
 	// preferred, alternate
-	Pref xsdt.String `xml:"pref,attr,omitempty"`
+	Pref xsdt.String `xml:"http://www.lido-schema.org pref,attr,omitempty"`
 
 	//  How to record: Has the two values: "yes" or "no". ”yes” indicates, that
 	// the term is an additional term which is derived from an underlying
 	// controlled vocabulary (eg. synonym, generic term, superordinate term) and
 	// should be used only for retrieval."no" is default.
-	AddedSearchTerm AddedSearchTerm `xml:"addedSearchTerm,attr,omitempty"`
+	AddedSearchTerm AddedSearchTerm `xml:"http://www.lido-schema.org addedSearchTerm,attr,omitempty"`
 
 	// How to record: Elements with data values are accompanied by the attributes
 	// encodinganalog and label to indicate the format of the data source from
 	// which the data were migrated. The attribute encodinganalog refers to the
 	// internal field label of the source database. The source format is indicated
 	// in the attribute relatedencoding of the lidoWrap
-	EncodingAnalog xsdt.String `xml:"encodinganalog,attr,omitempty"`
+	EncodingAnalog xsdt.String `xml:"http://www.lido-schema.org encodinganalog,attr,omitempty"`
 
 	// How to record: Elements with data values are accompanied by the attributes
 	// encodinganalog and label, to indicate the format of the data source from
 	// which the data were migrated. The attribute label refers to the external
 	// label of a data field at the visible user interface. The source format is
 	// indicated in the attribute
-	Label xsdt.String `xml:"label,attr,omitempty"`
+	Label xsdt.String `xml:"http://www.lido-schema.org label,attr,omitempty"`
 }
 
 func NewConcept(conceptID *Identifier, term *Term) *Concept {
