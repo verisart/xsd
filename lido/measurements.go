@@ -11,11 +11,12 @@ type MeasurementsWrap struct {
 type MeasurementsSet struct {
 	//  Definition: Display element for one object measurement, corresponding to the following objectMeasurement element.
 	//  How to record: Repeat this element only for language variants.
-	DisplayObjectMeasurements []*Text `xml:"http://www.lido-schema.org displayObjectMeasurements"`
+	DisplayMeasurements []*Text `xml:"http://www.lido-schema.org displayObjectMeasurements"`
 
-	//  Definition: Structured measurement information about the dimensions, size, or scale of the object / work.
-	//  Notes: It may also include the parts of a complex object / work, series, or collection.
-	ObjectMeasurements *Measurements `xml:"http://www.lido-schema.org objectMeasurements"`
+	// Structured measurement information about the dimensions, size, or scale of
+	// the object / work. it may also include the parts of a complex object /
+	// work, series, or collection.
+	Measurements *Measurements `xml:"http://www.lido-schema.org objectMeasurements"`
 
 	// Assigns a priority order for online presentation of the element. Has to be
 	// a positive integer, with descending priority from 1 to x.
@@ -70,15 +71,15 @@ type ExtentMeasurement struct {
 type AspectMeasurements struct {
 	//  Definition: Indicates what kind of measurement is taken.
 	//  How to record: Data values for type: height, width, depth, length, diameter, circumference, stories, count, area, volume, running time, size.Repeat this element only for language variants.
-	MeasurementTypes []*Text `xml:"http://www.lido-schema.org measurementType"`
+	Types []*Text `xml:"http://www.lido-schema.org measurementType"`
 
 	//  Definition: The unit of the measurement.
 	//  How to record: E.g. cm, mm, m, g, kg, kb, Mb or Gb.Repeat this element only for language variants.
-	MeasurementUnits []*Text `xml:"http://www.lido-schema.org measurementUnit"`
+	Units []*Text `xml:"http://www.lido-schema.org measurementUnit"`
 
 	//  Definition: The value of the measurement.
 	//  How to record: Whole numbers or decimal fractions.
-	MeasurementValue *Text `xml:"http://www.lido-schema.org measurementValue"`
+	Value Text `xml:"http://www.lido-schema.org measurementValue"`
 
 	// Assigns a priority order for online presentation of the element. Has to be
 	// a positive integer, with descending priority from 1 to x.

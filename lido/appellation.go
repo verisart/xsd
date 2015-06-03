@@ -42,22 +42,20 @@ type AppellationValue struct {
 	Label xsdt.String `xml:"http://www.lido-schema.org label,attr,omitempty"`
 }
 
-func (apl *Appellation) Set(value string, lang string, pref bool) error {
+func (apl *Appellation) Set(value string, lang string, pref bool) {
 	// First clear, then append
 	if len(apl.Values) > 0 {
 		apl.Values = apl.Values[:0]
 	}
 
-	return apl.Append(value, lang, pref)
+	apl.Append(value, lang, pref)
 }
 
 // Adds a an appellation value
-func (apl *Appellation) Append(value string, lang string, pref bool) error {
+func (apl *Appellation) Append(value string, lang string, pref bool) {
 	apl.Values = append(apl.Values, &AppellationValue{
 		Value: ToXsdt(value),
 		Lang:  ToLang(lang),
 		Pref:  ToPref(pref),
 	})
-
-	return nil
 }

@@ -27,30 +27,26 @@ type Title struct {
 	Type xsdt.String `xml:"http://www.lido-schema.org type,attr,omitempty"`
 }
 
-func NewTitle(value string, lang string, pref bool, titleType string) (*Title, error) {
+func NewTitle(value string, lang string, pref bool, titleType string) *Title {
 	title := &Title{
 		Type: ToXsdt(titleType),
 	}
 
-	err := title.Set(value, lang, pref)
+	title.Set(value, lang, pref)
 
-	if err != nil {
-		return nil, err
-	}
-
-	return title, nil
+	return title
 }
 
 // Adds a an appellation value to a title. The method is passed the value of
 // the title, the language code, and whether this is the preferred variant.
-func (title *Title) Set(value string, lang string, pref bool) error {
-	return title.Appellation.Set(value, lang, pref)
+func (title *Title) Set(value string, lang string, pref bool) {
+	title.Appellation.Set(value, lang, pref)
 }
 
 // Adds a an appellation value to a title. The method is passed the value of
 // the title, the language code, and whether this is the preferred variant.
-func (title *Title) Append(value string, lang string, pref bool) error {
-	return title.Appellation.Append(value, lang, pref)
+func (title *Title) Append(value string, lang string, pref bool) {
+	title.Appellation.Append(value, lang, pref)
 }
 
 // Convenience method for appending a title to a title wrap element.
