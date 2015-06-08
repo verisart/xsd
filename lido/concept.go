@@ -1,7 +1,7 @@
 package lido
 
 import (
-	"github.com/verisart/cidoccrm"
+	"github.com/verisart/cidoccrm/crm"
 	"github.com/verisart/xsd/xsdt"
 )
 
@@ -70,14 +70,8 @@ func NewURIConcept(uri string, term string, termLang string) *Concept {
 		})
 }
 
-func NewCRMConcept(crmID string) (*Concept, error) {
-	name, err := cidoccrm.ClassName(crmID)
-
-	if err != nil {
-		return nil, err
-	}
-
-	return NewURIConcept(cidoccrm.FormatURI(crmID), name, "en"), nil
+func NewCRMConcept(crmClass crm.Class) (*Concept, error) {
+	return NewURIConcept(crm.FormatURI(crmClass), crmClass.Name(), "en"), nil
 }
 
 func NewTermConcept(source string, conceptType string, termID string, term string) *Concept {

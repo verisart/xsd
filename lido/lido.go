@@ -2,6 +2,7 @@ package lido
 
 import (
 	"github.com/juju/xml"
+	"github.com/verisart/cidoccrm/crm"
 	"github.com/verisart/xsd/gml"
 	"github.com/verisart/xsd/xsdt"
 )
@@ -97,8 +98,8 @@ func (l *Lido) AppendRecID(recSource string, recType string, recID string) {
 }
 
 // Sets the LIDO category to a category defined in the CIDOC CRM
-func (l *Lido) SetCRMCategory(crmID string) error {
-	concept, err := NewCRMConcept(crmID)
+func (l *Lido) SetCRMCategory(crmClass crm.Class) error {
+	concept, err := NewCRMConcept(crmClass)
 
 	if err != nil {
 		return err
@@ -216,7 +217,7 @@ type ObjectIdentification struct {
 
 	DisplayStateEditionWrap *DisplayStateEdition `xml:"http://www.lido-schema.org displayStateEditionWrap"`
 
-	ObjectDescriptionWrap *ObjectDescriptionWrap `xml:"http://www.lido-schema.org objectDescriptionWrap"`
+	Description *ObjectDescription `xml:"http://www.lido-schema.org objectDescriptionWrap"`
 
 	MeasurementsWrap *MeasurementsWrap `xml:"http://www.lido-schema.org objectMeasurementsWrap"`
 }
@@ -238,8 +239,8 @@ type DisplayStateEdition struct {
 	SourceStateEditions []*Text `xml:"http://www.lido-schema.org sourceStateEdition"`
 }
 
-type ObjectDescriptionWrap struct {
-	ObjectDescriptionSets []*DescriptiveNote `xml:"http://www.lido-schema.org objectDescriptionSet"`
+type ObjectDescription struct {
+	Notes []*DescriptiveNote `xml:"http://www.lido-schema.org objectDescriptionSet"`
 }
 
 // Wrapper for infomation about related topics and works, collections, etc.
@@ -924,14 +925,14 @@ type DescriptiveNote struct {
 
 	//	Definition: Identifier for an external resource describing the entity.
 	//	Notes: The referenced resource may be any kind of document, preferably web-accessible.
-	DescriptiveNoteIDs []*Identifier `xml:"http://www.lido-schema.org descriptiveNoteID"`
+	IDs []*Identifier `xml:"http://www.lido-schema.org descriptiveNoteID"`
 
 	//	Definition: Usually a relatively brief essay-like text that describes the entity.
 	//	How to record: Repeat this element only for language variants.
-	DescriptiveNoteValues []*Text `xml:"http://www.lido-schema.org descriptiveNoteValue"`
+	Values []*Text `xml:"http://www.lido-schema.org descriptiveNoteValue"`
 
-	//	Definition: The source for the descriptive note, generally a published source.
-	SourceDescriptiveNotes []*Text `xml:"http://www.lido-schema.org sourceDescriptiveNote"`
+	//	DeTefinition: The source for the descriptive note, generally a published source.
+	Sources []*Text `xml:"http://www.lido-schema.org sourceDescriptiveNote"`
 }
 
 type EventActor struct {
