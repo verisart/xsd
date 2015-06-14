@@ -5,6 +5,7 @@ import (
 	"github.com/verisart/cidoccrm/crm"
 	"github.com/verisart/xsd/gml"
 	"github.com/verisart/xsd/xsdt"
+	"time"
 )
 
 const LocalRecordType = "local"
@@ -565,7 +566,15 @@ type LinkResource struct {
 }
 
 type EventWrap struct {
-	EventSets []*EventElement `xml:"http://www.lido-schema.org eventSet"`
+	Events []*EventElement `xml:"http://www.lido-schema.org eventSet"`
+}
+
+func (ew *EventWrap) AppendEvent(event *Event) {
+	element := &EventElement{
+		Event: event,
+	}
+
+	ew.Events = append(ew.Events, element)
 }
 
 type WorkID struct {
@@ -598,8 +607,11 @@ type EventElement struct {
 	// How to record: Repeat this element only for language variants.
 	DisplayEvents []*Text `xml:"http://www.lido-schema.org displayEvent"`
 
-	//	Definition: Identifying, descriptive and indexing information for the events in which the object participated or was present at, e.g. creation, excavation, collection, and use.
-	//	Notes: All information related to the creation of an object: creator, cutlural context, creation date, creation place, the material and techniques used are recorded here, qualified by the event type “creation”.
+	// Identifying, descriptive and indexing information for the events in which
+	// the object participated or was present at, e.g. creation, excavation,
+	// collection, and use. All information related to the creation of an object:
+	// creator, cutlural context, creation date, creation place, the material and
+	// techniques used are recorded here, qualified by the event type “creation”.
 	Event *Event `xml:"http://www.lido-schema.org event"`
 
 	// Assigns a priority order for online presentation of the element. Has to be
@@ -635,10 +647,10 @@ type Event struct {
 
 	//	Definition: The nature of the event associated with an object / work.
 	//	How to record: Controlled. Recommended: Defined list of subclasses of CRM entity E5 Event.Basic event types as recorded in sub-element term include: Acquisition, Collecting, Commisioning, Creation, Designing, Destruction, Event (non-specified), Excavation, Exhibition, Finding, Loss, Modification, Move, Part addition, Part removal, Performance, Planning, Production, Provenance, Publication, Restoration, Transformation, Type assignment, Type creation, Use.
-	EventType *Concept `xml:"http://www.lido-schema.org eventType"`
+	EventTypes []*Concept `xml:"http://www.lido-schema.org eventType"`
 
 	//	Definition: Date specification of the event.
-	EventDate *DateSet `xml:"http://www.lido-schema.org eventDate"`
+	Date *DateSet `xml:"http://www.lido-schema.org eventDate"`
 
 	//	Definition: Place specification of the event.
 	EventPlaces []*EventPlace `xml:"http://www.lido-schema.org eventPlace"`
@@ -689,6 +701,35 @@ type Event struct {
 	// most often within a production event, but also others such as excavation,
 	// restoration, etc.
 	EventMaterialsTechs []*EventMaterialsTech `xml:"http://www.lido-schema.org eventMaterialsTech"`
+
+	// NOTE, below here is a modification for Verisart's internal uses, please
+	// ignore and do not use should be no side effects
+	MeasurementsWrap *MeasurementsWrap `xml:"http://www.lido-schema.org objectMeasurementsWrap"`
+}
+
+// Sets the LIDO category to a category defined in the CIDOC CRM
+func (e *Event) AppendCRMType(crmClass crm.Class) error {
+	concept, err := NewCRMConcept(crmClass)
+
+	if err != nil {
+		return err
+	}
+
+	e.EventTypes = append(e.EventTypes, concept)
+	return nil
+}
+
+func (e *Event) SetDate(min time.Time, max time.Time) {
+	e.Date = &DateSet{
+		Date: &DateSpan{
+			EarliestDate: &Date{
+				Value: ToXsdt(min.In(time.UTC).Format("2006-01-02T15:04:05Z0700")),
+			},
+			LatestDate: &Date{
+				Value: ToXsdt(max.In(time.UTC).Format("2006-01-02T15:04:05Z0700")),
+			},
+		},
+	}
 }
 
 type DateSet struct {
@@ -721,7 +762,15 @@ type DateSpan struct {
 // span. General format: YYYY[-MM[-DD]]Format is according to ISO 8601. This may
 // include date and time specification.
 type Date struct {
-	XsdtString xsdt.String `xml:",chardata"`
+	Value xsdt.String `xml:",chardata"`
+
+	// Source of the information given in the holding element.
+	Source xsdt.String `xml:"http://www.lido-schema.org source,attr,omitempty"`
+
+	// Specification of the date, e.g. if it is an exact or an estimated earliest
+	// date. Data values may be: exactDate, estimatedDate.
+	Type xsdt.String `xml:"http://www.lido-schema.org type,attr,omitempty"`
+
 	// How to record: Elements with data values are accompanied by the attributes
 	// encodinganalog and label to indicate the format of the data source from
 	// which the data were migrated. The attribute encodinganalog refers to the
@@ -735,13 +784,6 @@ type Date struct {
 	// label of a data field at the visible user interface. The source format is
 	// indicated in the attribute
 	Label xsdt.String `xml:"http://www.lido-schema.org label,attr,omitempty"`
-
-	// Source of the information given in the holding element.
-	Source xsdt.String `xml:"http://www.lido-schema.org source,attr,omitempty"`
-
-	// Specification of the date, e.g. if it is an exact or an estimated earliest
-	// date. Data values may be: exactDate, estimatedDate.
-	Type xsdt.String `xml:"http://www.lido-schema.org type,attr,omitempty"`
 }
 
 type EventPlace struct {
