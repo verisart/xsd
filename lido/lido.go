@@ -99,7 +99,7 @@ func (l *Lido) AppendRecID(recSource string, recType string, recID string) {
 }
 
 // Sets the LIDO category to a category defined in the CIDOC CRM
-func (l *Lido) SetCRMCategory(crmClass crm.Class) error {
+func (l *Lido) SetCRMCategory(crmClass *crm.ConcreteClass) error {
 	concept, err := NewCRMConcept(crmClass)
 
 	if err != nil {
@@ -708,7 +708,7 @@ type Event struct {
 }
 
 // Sets the LIDO category to a category defined in the CIDOC CRM
-func (e *Event) AppendCRMType(crmClass crm.Class) error {
+func (e *Event) AppendCRMType(crmClass *crm.ConcreteClass) error {
 	concept, err := NewCRMConcept(crmClass)
 
 	if err != nil {

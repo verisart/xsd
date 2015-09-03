@@ -70,8 +70,8 @@ func NewURIConcept(uri string, term string, termLang string) *Concept {
 		})
 }
 
-func NewCRMConcept(crmClass crm.Class) (*Concept, error) {
-	return NewURIConcept(crm.FormatURI(crmClass), crmClass.Name(), "en"), nil
+func NewCRMConcept(crmClass *crm.ConcreteClass) (*Concept, error) {
+	return NewURIConcept(crmClass.IRI(), crmClass.Name(), "en"), nil
 }
 
 func NewTermConcept(source string, conceptType string, termID string, term string) *Concept {
