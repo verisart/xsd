@@ -2,8 +2,10 @@ package mets
 
 import (
 	"encoding/xml"
-	xlink "github.com/verisart/go-prov/schema/xlink"
-	xsdt "github.com/verisart/go-prov/schema/xsdt"
+	//xlink "github.com/verisart/go-prov/schema/xlink"
+	//xsdt "github.com/verisart/go-prov/schema/xsdt"
+	"github.com/verisart/xsd/xlink"
+	"github.com/verisart/xsd/xsdt"
 )
 
 // METS Version 1.8 via http://www.loc.gov/standards/mets/version18/mets.xsd
